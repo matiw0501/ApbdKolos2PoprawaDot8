@@ -1,7 +1,10 @@
-﻿namespace kolos2Poprawa.Services;
+﻿using kolos2Poprawa.DTOs;
+
+namespace kolos2Poprawa.Services;
 
 
-public class IDbService
+public interface IDbService
 {
-    
+    public Task<NurseriesBatchesDTO> GetNurseriesBatches(int id);
+    Task AddBatch(AddBatchDTO dto);
 }

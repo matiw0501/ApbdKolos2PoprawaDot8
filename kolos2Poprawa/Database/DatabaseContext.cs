@@ -56,11 +56,11 @@ public class DatabaseContext : DbContext
         
          modelBuilder.Entity<SeedlingBatch>().HasData(new List<SeedlingBatch>
          {
-             new SeedlingBatch(){BatchId = 1, NurseryId = 1, SpeciesId = 1, Quantity = 5, SownDate = DateTime.Parse("2021-09-01")},
-             new SeedlingBatch(){BatchId = 2, NurseryId = 1, SpeciesId = 2, Quantity = 1, SownDate = DateTime.Parse("2018-05-28")},
-             new SeedlingBatch(){BatchId = 3, NurseryId = 2, SpeciesId = 1, Quantity = 7, SownDate = DateTime.Parse("2022-12-02")},
-             new SeedlingBatch(){BatchId = 4, NurseryId = 2, SpeciesId = 3, Quantity = 3, SownDate = DateTime.Parse("2022-11-09")},
-             new SeedlingBatch(){BatchId = 5, NurseryId = 3, SpeciesId = 3, Quantity = 9, SownDate = DateTime.Parse("2021-06-19")},
+             new SeedlingBatch(){BatchId = 1, NurseryId = 1, SpeciesId = 1, Quantity = 5, SownDate = DateTime.Parse("2021-09-01"), ReadyDate = DateTime.Parse("2029-09-01")},
+             new SeedlingBatch(){BatchId = 2, NurseryId = 1, SpeciesId = 2, Quantity = 1, SownDate = DateTime.Parse("2018-05-28"), ReadyDate = DateTime.Parse("2028-09-01")},
+             new SeedlingBatch(){BatchId = 3, NurseryId = 2, SpeciesId = 1, Quantity = 7, SownDate = DateTime.Parse("2022-12-02"), ReadyDate = DateTime.Parse("2026-09-01")},
+             new SeedlingBatch(){BatchId = 4, NurseryId = 2, SpeciesId = 3, Quantity = 3, SownDate = DateTime.Parse("2022-11-09"), ReadyDate = DateTime.Parse("2025-09-01")},
+             new SeedlingBatch(){BatchId = 5, NurseryId = 3, SpeciesId = 3, Quantity = 9, SownDate = DateTime.Parse("2021-06-19"), ReadyDate = DateTime.Parse("2030-09-01")},
              
              
          });
